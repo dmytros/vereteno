@@ -5,7 +5,7 @@ namespace :states do
 
     if country
       Spree::State.delete_all
-      states = [
+      [
         ["Автономная Республика Крым", "UA-43"],
         ["Винницкая область", "UA-05"],
         ["Волынская область", "UA-07"],
