@@ -15,3 +15,8 @@
 /log/*.log
 /tmp
 /nbproject
+
+Capfile
+/config/deploy.rb
+/config/deploy
+
