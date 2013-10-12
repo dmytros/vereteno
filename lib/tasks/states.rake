@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 namespace :states do
   desc "Delete all states and insert for Ukraine"
   task :update => :environment do
