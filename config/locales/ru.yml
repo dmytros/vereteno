@@ -290,6 +290,7 @@ ru:
         other: ! '%{count} ошибок препятствуют сохранению %{resource}:'
   spree:
     shop: Магазин
+    package_from: Доставка со
     abbreviation: Аббревиатура
     account: Учетная запись
     account_updated: Учетная запись обновлена!
