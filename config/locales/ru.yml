@@ -289,6 +289,7 @@ ru:
         one: ! '1 ошибка препятствует сохранению %{resource}:'
         other: ! '%{count} ошибок препятствуют сохранению %{resource}:'
   spree:
+    shop: Магазин
     abbreviation: Аббревиатура
     account: Учетная запись
     account_updated: Учетная запись обновлена!

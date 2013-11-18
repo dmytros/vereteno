@@ -1,0 +1,39 @@
+<% content_for :subheader do %>
+  <%= render 'slider' %>
+<% end %>
+
+<div id="welcome-message">
+  <div class="container">
+    <h1>
+      Добро пожаловать в наш интернет-магазин пряжи - <b>ВЕРЕТЕНО</b>
+      <br/>
+      Выберите <a href="/products">пряжу</a> какую пожелаете и мы доставим ее Вам куда угодно
+    </h1>
+  </div>
+</div>
+
+<div class="container">
+  <% if @featured_products %>
+    <div id="featured-products" class="row">
+      <h3>Рекомендуемая пряжа</h3>
+      <hr/>
+      <ul class="carousel">
+        <% @featured_products.each do |product| %>
+          <%= render 'product', :product => product %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if @latest_products %>
+    <div id="latest-products" class="row">
+      <h3>Последние поступления</h3>
+      <hr/>
+      <ul class="carousel">
+        <% @latest_products.sort_by{ |product| product.created_at }.reverse.each do |product| %>
+          <%= render 'product', :product => product %>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
